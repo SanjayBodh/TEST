@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" type="image" href="icon.png">
+  <meta http-equiv="refresh" content="6;url=glider.html">
+  <title>Sewak Global Solution</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+svg {
+	font-family: "Rubik Vinyl", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 2s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF;
+position:relative;
+top:100px;
+}
+
+
+
+
+
+.spinner {
+   position: absolute;;
+   width: 15.4px;
+   height: 15.4px;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.spinner::before,
+.spinner::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   display: block;
+   animation: spinner-b4c8mmmd 0.5s backwards, spinner-49opz7md 1.25s 0.5s infinite ease;
+   border: 5.6px solid #3081D0;
+   border-radius: 50%;
+   box-shadow: 0 -33.6px 0 -5.6px #3081D0;
+   position: absolute;
+}
+
+.spinner::after {
+   animation-delay: 0s, 1.25s;
+}
+
+@keyframes spinner-b4c8mmmd {
+   from {
+      box-shadow: 0 0 0 -5.6px #3081D0;
+   }
+}
+
+@keyframes spinner-49opz7md {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+
+
+
+@media(max-width:768px){
+svg {
+	font-family: "Rubik Vinyl", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 3s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 50px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {
+
+background-color: #fff;
+
+}
+
+}
+  </style>
+</head>
+<body>
+<div class="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			SEWAK.COM
+		</text>
+	</svg>
+</div>
+
+<div class="spinner"></div>
+
+
+
+
+</body>
+</html>
